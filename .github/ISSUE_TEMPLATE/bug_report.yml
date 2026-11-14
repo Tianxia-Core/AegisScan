@@ -1,0 +1,18 @@
+name: Bug / False-Positive Report
+description: Report a detection issue in AegisScan
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Affected Security Domain
+      placeholder: "secrets / injection / dependencies / auth_acl / cryptography / ai_prompt_safety / supply_chain_cicd / infrastructure_headers"
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Minimal Sanitized Snippet & Expected Behavior
+    validations:
+      required: true
