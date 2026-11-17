@@ -13,8 +13,30 @@
 1. **Static Native CLI (`cmd/aegis-scan`)** — Compiled with Go (`CGO_ENABLED=0`) for sub-second concurrent directory scanning across Linux (`x86_64`, `aarch64`), Windows (`x86_64.exe`), and Android (`aarch64`).
 2. **Pure Python Stdlib Suite (`full_audit.py` / `score_calculator.py` / `scanners/`)** — Extensible per-domain Python scanners requiring only the Python 3.10+ standard library.
 
+<!-- BUILD_LAW_SHOWCASE_START -->
+
 ---
 
+## 🌍 In Plain English — What `AegisScan` Is & Why It Matters (Layman's Guide)
+
+- **The Everyday Problem:** Most security scanners take 20 minutes to configure, require cloud accounts, and completely miss modern AI threats like hidden prompt-injection characters or leaked agent tokens.
+- **How It Works (Without the Jargon):** `AegisScan` is a single, zero-dependency binary (`MIT`) that scans any repository across **8 security domains**—leaked secrets, command injection, weak cryptography, broken permissions, CI supply-chain risks, and AI prompt-injection payloads—in milliseconds.
+- **Why It Is Different:** Zero cloud uploads, zero external dependencies, and full alignment with **[Build Law](https://github.com/Tianxia-Core/Build-Law)** zero-trust static verification.
+- **How It Benefits You:** Developers and CISOs catch credential leaks and AI vulnerabilities on their laptop before `git push`—for `$0` and with 100% code privacy.
+- **How to Install & Use It in 60 Seconds:** Download the signed binary from Releases or compile in 2 seconds with `go build ./cmd/...`, then run `aegis-scan .`.
+
+---
+
+## 🏛️ Governed by [`Build Law`](https://github.com/Tianxia-Core/Build-Law) — Engineering Philosophy & Stakeholder Pathways
+
+This repository is a live production showcase of **[`Build Law`](https://github.com/Tianxia-Core/Build-Law)**—the open-source (`MIT`) **4-Pillar, 14-Gate Constitutional Engineering & `5.0×–8.8×` Token-Efficiency Standard** created by **[Collins Takem](https://rasaxmachina.com/collins)** (**RASA-X-MACHINA**):
+- **Developers & AI Builders:** Drop **[`Build Law`](https://github.com/Tianxia-Core/Build-Law)** into Claude Code, Cursor, OpenCode, VS Code (`.vsix`), GitHub Copilot, Windsurf, Cline, Aider, or any chat LLM in 60 seconds.
+- **CTOs & B2B Engineering Leaders:** Need similar `Rust`/`Go`/`Nix`/Security/FinOps rigor applied to your infrastructure? Scope a fixed-price **72-Hour `VRTTI` Architecture Sprint** at **[vrtti.rasaxmachina.com](https://vrtti.rasaxmachina.com)**.
+- **Investors, Researchers, Press & Executive Hiring Committees:** Inspect our cryptographic release proofs across **[`@Tianxia-Core`](https://github.com/Tianxia-Core)**, press assets at **[rasaxmachina.com/press](https://rasaxmachina.com/press)**, and founder dossier at **[rasaxmachina.com/collins](https://rasaxmachina.com/collins)**.
+
+<!-- BUILD_LAW_SHOWCASE_END -->
+
+---
 ## The 8 Security Domains
 
 | # | Domain Key | Weight | Python Scanner | Coverage |
